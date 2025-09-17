@@ -5,10 +5,11 @@ body {
     font-style: normal;
 }
 
-h1 {
+h1, h2 {
     color: rgb(77, 73, 63);
     font-weight: bold;
     font-size: 35px;
+    font-family:"Merriweather", serif;
 }
 
 .nav-menu {
@@ -35,7 +36,6 @@ h1 {
     background-color: #37cf37;
 }
 
-
 main {
     /*display: flex;*/
     justify-content: space-between;
@@ -54,11 +54,21 @@ main {
     gap: 20px;
 }
 
+.profile p{
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
 .profile img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.highlight{
+    color: goldenrod;
+    font-weight: bold;
 }
 
 .card-section{
@@ -69,10 +79,25 @@ main {
 .card{
     width: 200px;
     height: 200px;
-    box-sizing: border-box;
     border: #000 dotted 5px;
     padding: 5px;
     margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
 }
 
 .red{
