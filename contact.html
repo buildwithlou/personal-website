@@ -28,10 +28,10 @@
             <h2>LinkedIn Page</h2>
             <p>https://www.linkedin.com/in/lourdes-pampa/</p>
         </section>
-        <article id="contact">
+        <section class="contact-form">
             <h2>Contact Me</h2>
             <p>I'd really like to hear from you!</p>
-            <form action="https://httpbin.org/get" method="get">
+            <form action="https://httpbin.org/get" method="post">
                 <p>
                     <label for="firstName">First Name:</label>
                     <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus> 
@@ -52,9 +52,14 @@
                     <label for="decade">Favorite Decade:</label>
                     <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980"> 
                 </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Write your message here..." rows="5" required></textarea>
+                </p>
+                <button type="submit">Send</button>
             </form>
+        </section>
 
-        </article>
     </main>
     <footer>
         <p>&copy; 2025 Lourdes Pampa</p>

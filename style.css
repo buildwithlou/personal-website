@@ -6,12 +6,13 @@ body {
 }
 
 h1, h2 {
-    color: rgb(77, 73, 63);
+    color: rgb(169, 165, 154);
     font-weight: bold;
     font-size: 35px;
     font-family:"Merriweather", serif;
 }
 
+/*--------INDEX.HTML DOCUMENT-------------*/
 .nav-menu {
     background-color: grey;
     display: flex;
@@ -43,6 +44,29 @@ main {
     margin: auto;
     gap: 20px;
 }
+
+.hero {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center center/cover;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+
 
 .profile {
     border: 2px solid rgb(46, 162, 11);
@@ -116,6 +140,57 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/*--------CONTACT.HTML DOCUMENT-------------*/
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: #37cf37;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #2aa52a;
+    transform: scale(1.03);
 }
 
 /* Small screens (phones) */
