@@ -61,7 +61,25 @@ h2 {
 }
 
 /* ---------- NAVIGATION ---------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
 .nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+/*.nav-menu {
     background-color: var(--nav-grey);
     display: flex;
     justify-content: center;
@@ -79,9 +97,22 @@ h2 {
 
 .nav-menu a:hover {
     background-color: var(--main-green);
-}
+}*/
 
 /* ---------- HERO ---------- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    color: var(--white);
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center center/cover;
+}
+
+/*
 .hero {
     height: 300px;
     display: flex;
@@ -93,7 +124,7 @@ h2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center center/cover;
-}
+}*/
 
 .hero h2 {
     font-size: var(--fs-h2);
@@ -140,16 +171,18 @@ h2 {
 /* ---------- CARDS ---------- */
 .card-section {
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
-    border: var(--black) dotted 5px;
-    padding: var(--space-s);
-    margin: var(--space-s);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
 }
 
 .card:hover {
@@ -239,7 +272,7 @@ footer {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 95%;
     padding: var(--space-m);
     margin-top: 5px;
     border: 1px solid #ccc;
