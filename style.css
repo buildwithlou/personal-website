@@ -61,6 +61,17 @@ h2 {
     text-align: center;
 }
 
+input:focus, textarea:focus{
+    border-color: var(--main-green);
+    outline: none;
+    box-shadow: 0 0 5px var(--main-green);
+}
+
+button:hover{
+    background-color: var(--dark-green);
+    transform: scale(1.05);
+}
+
 /* ---------- NAVIGATION ---------- */
 header {
     display: flex;
@@ -322,6 +333,23 @@ footer {
     transform: scale(1.03);
 }
 
+.newsteller{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: auto;
+}
+.newsteller span{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+label[for="subscribe"] {
+    margin-right: 10px;      /* space between main label and first checkbox */
+}
 /* ---------- MEDIA QUERIES ---------- */
 /* Medium screens (Ipad) */
 @media (max-width: 600px) {
@@ -348,7 +376,7 @@ footer {
         max-width: 300px;
         height: auto;
     }
-   .nav-menu {
+    .nav-menu {
         display: none; /* hide menu by default */
         flex-direction: column;
         gap: 1rem;
@@ -405,6 +433,10 @@ footer {
     #menu-toggle:checked + .ham-menu span:nth-child(3) {
         transform: rotate(-45deg);
         top: 18px;
+    }
+
+    .contact-form input, .contact-form textarea{
+        width: 100%;
     }
 }
 
