@@ -167,7 +167,29 @@ header {
     color: goldenrod;
     font-weight: bold;
 }
+/* ---------- GRID SECTION ---------- */
+.grid-practice{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    /*grid-row-gap: 50px;
+    grid-column-gap: 50px;*/
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center
+}
 
+.grid-practice .box{
+    background-color: red;
+}
+
+.box:nth-child(1){
+    grid-column:  1/3;
+}
+
+.box:nth-child(4){
+    grid-column:  1/3;
+}
 /* ---------- CARDS ---------- */
 .card-section {
     display: flex;
