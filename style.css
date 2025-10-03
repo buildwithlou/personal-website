@@ -95,6 +95,14 @@ header {
     display: none;
 }
 
+a {
+    color: #333;
+    transition: text-shadow 0.3s;
+}
+a:hover {
+    text-shadow: 0 0 8px #37cf37;
+}
+
 /* ---------- HERO ---------- */
 .hero {
     display: flex;
@@ -192,6 +200,11 @@ header {
     align-items: center;
 }
 
+.boxContainer:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
 .boxContainer:nth-child(1){
     justify-self: start;
     align-self: start;
@@ -201,6 +214,7 @@ header {
     justify-self: end;
     align-self: end;
 }
+
 /* ---------- CARDS ---------- */
 .card-section {
     display: flex;
